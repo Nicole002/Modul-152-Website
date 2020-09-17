@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Sticky Footer Navbar Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS/responsive.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="CSS/sticky-footer-navbar.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+       alert('Hallo jQuery');
+
+      console.log("Hallo Konsole");
+
+      //LA 7712
+      $(".lead").click(function () {
+        console.log("Auf den p-container wurde geklickt");
+      });
+
+      $(".lead").hover(function () {
+        console.log("Über dem p-Container befindet sich der Mauszeiger");
+      });
+
+      //LA 7713
+      // 3)	Erstellen Sie ein jQuery-Skript, das allen «tr»-Tags die Farbe zuweist.
+      $("tr").addClass("colored");
+
+      //4 Hover
+      $("tr").mouseover(function () {
+        $(this).addClass("mouseon");
+      });
+
+      //5 remove hover
+      $("tr").mouseout(function () {
+        $(this).removeClass("mouseon");
+      });
+
+    });
+
+  </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Carousel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap.html">bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jQuery.html">jQuery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jQuery7715.html">7715</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jQuery7716.html">7716</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hangman.html">hangman game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="canvas.html">canvas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="audio.html">audio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="keysound.html">key</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gimp.html">gimp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="animation.html">animation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="video.html">video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="youtube.html">yt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="background.html">bg</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h1 style="text-align:center"><u>Meine jQuery Seite mit Bootstrap</u></h1>
+      <h3>Startseite</h3>
+      <p>Meine Beispiele</p>
+      <h6>Was ist jQuery?</h6>
+      <p>Mit jQuery ist es viel einfacher JavaScrip in die Webseite einzubinden, da man mit jQuery ganze JavaScript
+        methoden mit einer Zeile aufrufen kann.</p>
+      <h6>Auf der Webseite einbinden</h6>
+      <p>Um jQuery auf der Webseite einzubinden, muss das jQuery selbst bevor dem jQuery-Code eingebunden werden, da
+        sonst eine Fehlermeldung auftritt. </p>
+      <h6>jQuery Syntax</h6>
+      <p>Der Syntax ist dafür zugeschnitten, HTML Elemente auszusuchen und dann eine Aktion auszuführen.</p>
+      <p>Basic Syntax: $(selector).action()</p>
+      <h6>Beispiele:</h6>
+      <p>$(this).hide() - hides the current element.</p>
+      <p>$("p").hide() - hides all p elements.</p>
+      <h5>Tracking Mouse Coordinates (7712)</h5>
+      <p class="lead">Auf diesen Absatz kann reagiert werden</p>
+    </div>
+
+
+    <div class="container">
+      <h5>responsive table (7713)</h5>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Vorname</th>
+              <th>Nachname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Susanne</td>
+              <td>Muster</td>
+            </tr>
+            <tr>
+              <td>Rüdi</td>
+              <td>Rüssel</td>
+            </tr>
+            <tr>
+              <td>Bert</td>
+              <td>Baumann</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script src="JQuery/jquery-3.5.1.slim.min.js"> </script>
+  <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="JQuery/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
